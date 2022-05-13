@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.administrator.cpu2"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+/******************************************/
+
+
+task makeJar(type: Copy) {
+    delete 'libs/mysdk.jar'  //删除存在的
+    from('build/intermediates/bundles/release/')       //设置拷贝的文件
+    from fileTree(dir: 'src/main', includes: ['assets/**'])
+    into('libs/')      //打进jar包后的文件目录
+    //将classes.jar放入build/libs/目录下
+    //include ,exclude参数来设置过滤
+    //（我们只关心classes.jar这个文件）
+    include('classes.jar')
+    rename('classes.jar', 'mysdk.jar')         //重命名
+}
+
+makeJar.dependsOn(build)
+
+
+task deleteBuild(type: Delete) {
+    delete "libs/mysdk.jar"
+}
+
+/******************************* cpuframeworkhelper *************/
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api rootProject.ext.dependencies["appcompat"]
+}

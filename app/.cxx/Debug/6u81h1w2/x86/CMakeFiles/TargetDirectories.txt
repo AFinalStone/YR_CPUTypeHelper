@@ -1,0 +1,3 @@
+D:/Android_Project/YR_Project/YR_CPUTypeHelper/app/.cxx/Debug/6u81h1w2/x86/CMakeFiles/native-lib.dir
+D:/Android_Project/YR_Project/YR_CPUTypeHelper/app/.cxx/Debug/6u81h1w2/x86/CMakeFiles/edit_cache.dir
+D:/Android_Project/YR_Project/YR_CPUTypeHelper/app/.cxx/Debug/6u81h1w2/x86/CMakeFiles/rebuild_cache.dir

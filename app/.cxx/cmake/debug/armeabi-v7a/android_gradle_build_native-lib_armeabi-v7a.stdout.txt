@@ -1,0 +1,34 @@
+[1/3] Building CXX object CMakeFiles/native-lib.dir/src/main/cpp/CpuFeatures.cpp.o
+[2/3] Building C object CMakeFiles/native-lib.dir/src/main/cpp/cpu-features.c.o
+D:\Android_Project\YR_Project\YR_CPUTypeHelper\app\src\main\cpp\cpu-features.c:136:44: warning: implicitly declaring library function 'strerror' with type 'char *(int)' [-Wimplicit-function-declaration]
+        D("Can't open %s: %s\n", pathname, strerror(errno));
+                                           ^
+D:\Android_Project\YR_Project\YR_CPUTypeHelper\app\src\main\cpp\cpu-features.c:136:44: note: include the header <string.h> or explicitly provide a declaration for 'strerror'
+D:\Android_Project\YR_Project\YR_CPUTypeHelper\app\src\main\cpp\cpu-features.c:196:21: warning: implicitly declaring library function 'strlen' with type 'unsigned int (const char *)' [-Wimplicit-function-declaration]
+    int  fieldlen = strlen(field);
+                    ^
+D:\Android_Project\YR_Project\YR_CPUTypeHelper\app\src\main\cpp\cpu-features.c:196:21: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+D:\Android_Project\YR_Project\YR_CPUTypeHelper\app\src\main\cpp\cpu-features.c:204:13: warning: implicit declaration of function 'memmem' is invalid in C99 [-Wimplicit-function-declaration]
+        p = memmem(p, bufend-p, field, fieldlen);
+            ^
+D:\Android_Project\YR_Project\YR_CPUTypeHelper\app\src\main\cpp\cpu-features.c:204:11: warning: incompatible integer to pointer conversion assigning to 'const char *' from 'int' [-Wint-conversion]
+        p = memmem(p, bufend-p, field, fieldlen);
+          ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\Android_Project\YR_Project\YR_CPUTypeHelper\app\src\main\cpp\cpu-features.c:213:10: warning: implicitly declaring library function 'memchr' with type 'void *(const void *, int, unsigned int)' [-Wimplicit-function-declaration]
+    p  = memchr(p, ':', bufend-p);
+         ^
+D:\Android_Project\YR_Project\YR_CPUTypeHelper\app\src\main\cpp\cpu-features.c:213:10: note: include the header <string.h> or explicitly provide a declaration for 'memchr'
+D:\Android_Project\YR_Project\YR_CPUTypeHelper\app\src\main\cpp\cpu-features.c:226:5: warning: implicitly declaring library function 'memcpy' with type 'void *(void *, const void *, unsigned int)' [-Wimplicit-function-declaration]
+    memcpy(result, p, len);
+    ^
+D:\Android_Project\YR_Project\YR_CPUTypeHelper\app\src\main\cpp\cpu-features.c:226:5: note: include the header <string.h> or explicitly provide a declaration for 'memcpy'
+D:\Android_Project\YR_Project\YR_CPUTypeHelper\app\src\main\cpp\cpu-features.c:250:32: warning: implicitly declaring library function 'memcmp' with type 'int (const void *, const void *, unsigned int)' [-Wimplicit-function-declaration]
+        if (itemlen == q-p && !memcmp(p, item, itemlen))
+                               ^
+D:\Android_Project\YR_Project\YR_CPUTypeHelper\app\src\main\cpp\cpu-features.c:250:32: note: include the header <string.h> or explicitly provide a declaration for 'memcmp'
+D:\Android_Project\YR_Project\YR_CPUTypeHelper\app\src\main\cpp\cpu-features.c:839:18: warning: implicitly declaring library function 'strcmp' with type 'int (const char *, const char *)' [-Wimplicit-function-declaration]
+            if (!strcmp(hardware, "Goldfish") &&
+                 ^
+D:\Android_Project\YR_Project\YR_CPUTypeHelper\app\src\main\cpp\cpu-features.c:839:18: note: include the header <string.h> or explicitly provide a declaration for 'strcmp'
+8 warnings generated.
+[3/3] Linking CXX shared library ..\..\..\..\build\intermediates\cmake\debug\obj\armeabi-v7a\libnative-lib.so

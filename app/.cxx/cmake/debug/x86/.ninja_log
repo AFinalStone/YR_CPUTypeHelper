@@ -1,0 +1,4 @@
+# ninja log v5
+13	514	0	CMakeFiles/native-lib.dir/src/main/cpp/CpuFeatures.cpp.o	8f97d05217a0305
+1	543	0	CMakeFiles/native-lib.dir/src/main/cpp/cpu-features.c.o	cd5f2f62ceb2a824
+544	728	0	../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so	708302ec887cac4f

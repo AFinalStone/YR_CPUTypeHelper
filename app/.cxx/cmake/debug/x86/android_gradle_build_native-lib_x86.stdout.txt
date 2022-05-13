@@ -1,0 +1,12 @@
+[1/3] Building C object CMakeFiles/native-lib.dir/src/main/cpp/cpu-features.c.o
+[2/3] Building CXX object CMakeFiles/native-lib.dir/src/main/cpp/CpuFeatures.cpp.o
+D:\Android_Project\YR_Project\YR_CPUTypeHelper\app\src\main\cpp\cpu-features.c:136:44: warning: implicitly declaring library function 'strerror' with type 'char *(int)' [-Wimplicit-function-declaration]
+        D("Can't open %s: %s\n", pathname, strerror(errno));
+                                           ^
+D:\Android_Project\YR_Project\YR_CPUTypeHelper\app\src\main\cpp\cpu-features.c:136:44: note: include the header <string.h> or explicitly provide a declaration for 'strerror'
+D:\Android_Project\YR_Project\YR_CPUTypeHelper\app\src\main\cpp\cpu-features.c:355:13: warning: implicitly declaring library function 'memchr' with type 'void *(const void *, int, unsigned int)' [-Wimplicit-function-declaration]
+        q = memchr(p, ',', end-p);
+            ^
+D:\Android_Project\YR_Project\YR_CPUTypeHelper\app\src\main\cpp\cpu-features.c:355:13: note: include the header <string.h> or explicitly provide a declaration for 'memchr'
+2 warnings generated.
+[3/3] Linking CXX shared library ..\..\..\..\build\intermediates\cmake\debug\obj\x86\libnative-lib.so

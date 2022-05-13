@@ -1,0 +1,7 @@
+Executable : D:\Android_SDK\cmake\3.18.1\bin\ninja.exe
+arguments : 
+-C
+D:\Android_Project\CPUTypeHelper-master\app\.cxx\Debug\2b4c366m\x86
+native-lib
+jvmArgs : 
+

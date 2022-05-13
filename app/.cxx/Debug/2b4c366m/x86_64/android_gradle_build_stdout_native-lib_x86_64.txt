@@ -1,0 +1,2 @@
+ninja: Entering directory `D:\Android_Project\CPUTypeHelper-master\app\.cxx\Debug\2b4c366m\x86_64'
+[1/1] Linking CXX shared library ..\..\..\..\build\intermediates\cxx\Debug\2b4c366m\obj\x86_64\libnative-lib.so

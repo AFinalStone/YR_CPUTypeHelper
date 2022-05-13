@@ -1,0 +1,2 @@
+rootProject.name = "YR_CPUTypeHelper"
+include ':app', ':mycpu'

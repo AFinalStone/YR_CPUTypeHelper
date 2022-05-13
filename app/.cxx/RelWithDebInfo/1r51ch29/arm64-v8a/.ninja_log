@@ -1,0 +1,5 @@
+# ninja log v5
+14	245	671371196	CMakeFiles/native-lib.dir/src/main/cpp/cpu-features.c.o	e97eb3611570cdab
+1	887	671371197	CMakeFiles/native-lib.dir/src/main/cpp/CpuFeatures.cpp.o	1c2cc582f1d330c2
+887	1005	671371197	../../../../build/intermediates/cxx/RelWithDebInfo/1r51ch29/obj/arm64-v8a/libnative-lib.so	619ea2a851485475
+3	569	671371667	../../../../build/intermediates/cxx/RelWithDebInfo/1r51ch29/obj/arm64-v8a/libnative-lib.so	619ea2a851485475
